@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 간단한 웹페이지</title>
+    <!-- Tailwind CSS CDN을 로드하여 간편하게 스타일을 적용합니다. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 기본 폰트 설정 (Inter 폰트가 없다면 시스템 기본 산세리프 폰트를 사용합니다) */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-400 to-purple-500 min-h-screen flex items-center justify-center p-4">
+    <!-- 페이지의 메인 콘텐츠를 담는 컨테이너입니다. -->
+    <div class="bg-white p-8 rounded-xl shadow-2xl max-w-md w-full text-center transform hover:scale-105 transition-transform duration-300 ease-in-out">
+        <!-- 메인 제목 -->
+        <h1 class="text-4xl font-extrabold text-gray-800 mb-4 animate-fade-in-down">
+            환영합니다!
+        </h1>
+        <!-- 부제목 또는 간단한 소개글 -->
+        <p class="text-lg text-gray-600 mb-6 animate-fade-in-up">
+            이것은 GitHub Pages를 통해 호스팅되는 저의 아주 간단한 웹페이지입니다.
+        </p>
+        <!-- 버튼 예시 -->
+        <a href="https://github.com/new" target="_blank" rel="noopener noreferrer"
+           class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:translate-y-1 hover:scale-105">
+            새로운 GitHub 저장소 만들기
+        </a>
+    </div>
+
+    <!-- 간단한 CSS 애니메이션을 위한 스타일 (선택 사항) -->
+    <style>
+        @keyframes fade-in-down {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-down {
+            animation: fade-in-down 1s ease-out forwards;
+        }
+        .animate-fade-in-up {
+            animation: fade-in-up 1s ease-out forwards 0.5s; /* 제목보다 늦게 시작 */
+        }
+    </style>
+</body>
+</html>
