@@ -63,4 +63,204 @@
             margin: 0 auto;
         }
 
-        /* 메
+        /* 메인 이미지 갤러리 */
+        .main-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        .main-images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 280px;
+        }
+
+        /* 인증서 */
+        .certificates {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .cert-item {
+            text-align: center;
+            flex: 1;
+            min-width: 260px;
+            max-width: 320px;
+        }
+        .cert-item img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .map-info {
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        /* 제품 리스트 */
+        .product-list {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+        .product-list li {
+            margin-bottom: 8px;
+        }
+
+        /* 구글맵 */
+        .google-map {
+            width: 100%;
+            height: 420px;
+            border: 0;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #1a3c6e;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 메뉴 -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-menu">
+                <a href="#company">회사소개</a>
+                <a href="#products">제품소개</a>
+                <a href="#contact">연락처</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 회사소개 -->
+    <section id="company" class="section">
+        <h1>도영비닐공업사</h1>
+        <div class="content">
+            <h2>회사소개</h2>
+            <p><strong>도영비닐공업사 홈페이지를 방문하여 주셔서 대단히 감사합니다.</strong></p>
+            
+            <p>1986년 도영비닐공업사로 창업 이래 대형 압출기 및 중소형 압출기 외 각종 가공기를 다양하게 구비하고 있습니다.</p>
+            
+            <p>제품의 두께, 폭 등을 구매자 분들의 요구에 맞도록 신속하고 정확하게 생산하여 공급할 것을 약속드립니다.</p>
+            
+            <p>전자제품 포장용, 자동차부품 포장용, 섬유 포장용, 공업용, 식품 포장용(등록업체) 등 전 제품을 생산하고 있습니다.</p>
+            
+            <p>30년 이상 축적된 노하우로 구매자 분들의 의견을 존중하여 정확하고 저렴한 제품을 공급하도록 노력하겠습니다.</p>
+
+            <!-- 메인 이미지 -->
+            <div class="main-images">
+                <img src="images/main1.jpg" alt="도영비닐공업사">
+                <img src="images/main2.jpg" alt="도영비닐공업사">
+                <img src="images/main3.jpg" alt="도영비닐공업사">
+                <img src="images/main4.jpg" alt="도영비닐공업사">
+            </div>
+
+            <h3>인증서</h3>
+            <div class="certificates">
+                <div class="cert-item">
+                    <img src="images/clean1.jpg" alt="클린 인증서">
+                    <p style="margin-top: 10px; font-weight: 500;">클린 인증서</p>
+                </div>
+                <div class="cert-item">
+                    <img src="images/clean2.jpg" alt="성적서">
+                    <p style="margin-top: 10px; font-weight: 500;">성적서</p>
+                </div>
+                <div class="cert-item">
+                    <img src="images/clean3.jpg" alt="성적서">
+                    <p style="margin-top: 10px; font-weight: 500;">성적서</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 제품소개 -->
+    <section id="products" class="section" style="background: #f8f9fa;">
+        <div class="content">
+            <h2>제품소개</h2>
+            <p>도영비닐공업사에서 생산하는 다양한 포장용 비닐 제품들입니다.</p>
+
+            <div style="margin-top: 40px;">
+                <h3>공업용비닐</h3>
+                <ul class="product-list">
+                    <li>공업용 비닐</li>
+                    <li>방청비닐</li>
+                    <li>전자제품 포장용</li>
+                    <li>자동차부품 포장용</li>
+                    <li>섬유제품 포장용</li>
+                    <li>사출물 포장용</li>
+                    <li>각종 부품 포장용</li>
+                    <li>분말 포장용</li>
+                    <li>빙방사 (빙판길 미끄럼 방지용 모래주머니)</li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <h3>식품용비닐</h3>
+                <ul class="product-list">
+                    <li>김치포장용</li>
+                    <li>절임배추용</li>
+                    <li>야채포장용</li>
+                    <li>각종 식품용</li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <h3>기타</h3>
+                <ul class="product-list">
+                    <li>OPP TAPE</li>
+                    <li>지퍼백, 에어캡</li>
+                    <li>PE발포시트, 발포백</li>
+                    <li>공업용랩</li>
+                    <li>포장용 자재</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 연락처 -->
+    <section id="contact" class="section">
+        <div class="content">
+            <h2>연락처</h2>
+            <p><strong>대표</strong> : 이성길</p>
+            <p><strong>사업자등록번호</strong> : 504-27-83077</p>
+            <p><strong>전화</strong> : <a href="tel:0549712432">054-971-2432</a></p>
+            <p><strong>팩스</strong> : 054-971-2434</p>
+            <p><strong>이메일</strong> : <a href="mailto:jhoon5153@naver.com">jhoon5153@naver.com</a></p>
+            <p><strong>주소</strong> : 경상북도 칠곡군 가산면 호국로 1278-8</p>
+
+            <h3>찾아오시는 길</h3>
+            <div class="map-info">
+                <p><strong>고속도로 이용 시</strong></p>
+                <p>중앙고속도로 다부 IC → 왜관방면으로 좌회전 후 1.38km 직진 → 학산편의점 우측 골목으로 진입 후 좌회전</p>
+            </div>
+
+            <!-- 구글맵 -->
+            <iframe class="google-map" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3225.7178489483035!2d128.49608107495644!3d36.051591309541706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565dcb972e7a795%3A0xe78cfe9843726397!2z64-E7JiB67mE64uQ6rO17JeF7IKs!5e0!3m2!1sko!2sjp!4v1781162967647!5m2!1sko!2sjp" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 도영비닐공업사 All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
