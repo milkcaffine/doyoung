@@ -5,34 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>도영비닐공업사</title>
     <style>
-        body { font-family: 'Noto Sans KR', sans-serif; margin: 0; padding: 40px; line-height: 1.6; }
-        .container { max-width: 800px; margin: 0 auto; }
-        h1 { color: #1a3c6e; }
-        .lang-links { margin: 20px 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Noto Sans KR', system-ui, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background: #1a3c6e;
+            padding: 15px 0;
+            z-index: 100;
+        }
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-weight: 500;
+        }
+        .nav-menu a:hover {
+            background: #2a5a9e;
+            border-radius: 4px;
+        }
+
+        .section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #1a3c6e;
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 2.8rem;
+        }
+        h2 {
+            color: #1a3c6e;
+            border-bottom: 3px solid #1a3c6e;
+            padding-bottom: 12px;
+            margin-bottom: 30px;
+        }
+
+        .content {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .map-info {
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        footer {
+            background: #1a3c6e;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>도영비닐공업사</h1>
-        
-        <div class="lang-links">
-            <strong>한국어</strong> | 
-            English | 中文 | 日本語 | Español | ...
-        </div>
 
-        <p><strong>도영비닐공업사 홈페이지를 방문하여 주셔서 대단히 감사합니다.</strong></p>
-        
-        <p>1986년 도영비닐공업사로 창업 이래 대형 압출기 및 중소형 압출기 외 각종 가공기를 다양하게 구비하고 있습니다.</p>
-        
-        <p>제품의 두께, 폭 등을 구매자 분들의 요구에 맞도록 신속하고 정확하게 생산하여 공급할 것을 약속드립니다.</p>
-        
-        <p>전자제품 포장용, 자동차부품 포장용, 섬유 포장용, 공업용, 식품 포장용(등록업체) 등 전 제품을 생산하고 있습니다.</p>
-        
-        <p>30년 이상 축적된 노하우로 구매자 분들의 의견을 존중하여 정확하고 저렴한 제품을 공급하도록 노력하겠습니다.</p>
-        
-        <p><strong>도영비닐공업사 대표 이성길</strong></p>
-        
-        <!-- 연락처, 지도, 제품 사진 등 추가 가능 -->
-    </div>
+    <!-- 메뉴 -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-menu">
+                <a href="#company">회사소개</a>
+                <a href="#products">제품소개</a>
+                <a href="#contact">연락처</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 회사소개 -->
+    <section id="company" class="section">
+        <h1>도영비닐공업사</h1>
+        <div class="content">
+            <h2>회사소개</h2>
+            <p><strong>도영비닐공업사 홈페이지를 방문하여 주셔서 대단히 감사합니다.</strong></p>
+            
+            <p>1986년 도영비닐공업사로 창업 이래 대형 압출기 및 중소형 압출기 외 각종 가공기를 다양하게 구비하고 있습니다.</p>
+            
+            <p>제품의 두께, 폭 등을 구매자 분들의 요구에 맞도록 신속하고 정확하게 생산하여 공급할 것을 약속드립니다.</p>
+            
+            <p>전자제품 포장용, 자동차부품 포장용, 섬유 포장용, 공업용, 식품 포장용(등록업체) 등 전 제품을 생산하고 있습니다.</p>
+            
+            <p>30년 이상 축적된 노하우로 구매자 분들의 의견을 존중하여 정확하고 저렴한 제품을 공급하도록 노력하겠습니다.</p>
+
+            <h3>찾아오시는 길</h3>
+            <div class="map-info">
+                <p><strong>고속도로 이용 시</strong></p>
+                <p>중앙고속도로 다부 IC → 왜관방면으로 좌회전 후 1.38km 직진 → 학산편의점 우측 골목으로 진입 후 좌회전</p>
+                <!-- 여기에 나중에 지도 이미지나 캡처 넣으면 됨 -->
+            </div>
+
+            <h3>인증서</h3>
+            <p>인증서 이미지를 여기에 추가 예정입니다.</p>
+            <!-- 인증서 이미지 여러 장 넣을 자리 -->
+        </div>
+    </section>
+
+    <!-- 제품소개 -->
+    <section id="products" class="section" style="background: #f8f9fa;">
+        <div class="content">
+            <h2>제품소개</h2>
+            <p>도영비닐공업사에서 생산하는 다양한 포장용 비닐 제품들입니다.</p>
+            
+            <!-- 제품 카테고리별로 자유롭게 추가할 수 있게 만들어 둠 -->
+            <div style="margin-top: 40px;">
+                <h3>전자제품 포장용</h3>
+                <p>여기에 해당 제품 설명과 이미지, 스펙을 넣으세요.</p>
+            </div>
+            
+            <div style="margin-top: 40px;">
+                <h3>자동차부품 포장용</h3>
+                <p>여기에 해당 제품 설명과 이미지, 스펙을 넣으세요.</p>
+            </div>
+            
+            <div style="margin-top: 40px;">
+                <h3>섬유 포장용</h3>
+                <p>여기에 해당 제품 설명과 이미지, 스펙을 넣으세요.</p>
+            </div>
+            
+            <div style="margin-top: 40px;">
+                <h3>식품 포장용</h3>
+                <p>여기에 해당 제품 설명과 이미지, 스펙을 넣으세요. (식품 포장용 등록업체)</p>
+            </div>
+            
+            <!-- 필요하면 더 추가 가능 -->
+        </div>
+    </section>
+
+    <!-- 연락처 -->
+    <section id="contact" class="section">
+        <div class="content">
+            <h2>연락처</h2>
+            <p><strong>대표</strong> : 이성길</p>
+            <p><strong>전화</strong> : <a href="tel:054-xxx-xxxx">054-xxx-xxxx</a></p>
+            <p><strong>팩스</strong> : 054-xxx-xxxx</p>
+            <p><strong>이메일</strong> : doyoung@doyoung.kr</p>
+            <p><strong>주소</strong> : 경상북도 칠곡군 왜관읍 ...</p>
+            
+            <!-- 구글맵 임베드 자리 -->
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="400" style="border:0; margin-top:30px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 도영비닐공업사 All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
